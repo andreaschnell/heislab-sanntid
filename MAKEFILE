@@ -1,0 +1,47 @@
+BuildAndRun1:
+	go build -o Elevator.exe main.go
+	cmd /C start call Elevator.exe -id 0 -port 15657
+
+BuildAndRun2:
+	go build -o Elevator.exe main.go
+	cmd /C start call Elevator.exe -id 0 -port 15657
+	cmd /C start call Elevator.exe -id 1 -port 15658
+
+BuildAndRun3:
+	go build -o Elevator.exe main.go
+	cmd /C start call Elevator.exe -id 0 -port 15657
+	cmd /C start call Elevator.exe -id 1 -port 15658
+	cmd /C start call Elevator.exe -id 2 -port 15659
+
+RunSimulator1:
+	cmd /C start call SimElevatorServer --port 15657
+
+RunSimulator2:
+	cmd /C start call SimElevatorServer --port 15657
+	cmd /C start call SimElevatorServer --port 15658
+
+RunSimulator3:
+	cmd /C start call SimElevatorServer --port 15657
+	cmd /C start call SimElevatorServer --port 15658
+	cmd /C start call SimElevatorServer --port 15659
+
+BuildAlone0:
+	go build -o Elevator.exe main.go
+	cmd /C start call Elevator.exe -id 0 -port 15657
+
+RunSimAlone0:
+	cmd /C start call SimElevatorServer --port 15657
+
+BuildAlone1:
+	go build -o Elevator.exe main.go
+	cmd /C start call Elevator.exe -id 1 -port 15658
+
+RunSimAlone1:
+	cmd /C start call SimElevatorServer --port 15658
+
+BuildAlone2:
+	go build -o Elevator.exe main.go
+	cmd /C start call Elevator.exe -id 2 -port 15659
+
+RunSimAlone2:
+	cmd /C start call SimElevatorServer --port 15659

@@ -1,0 +1,11 @@
+{
+    "mainLogging":              "DBG",
+    "assignerLogging":          "DBG",
+    "controllerLogging":        "DBG",
+    "driverLogging":            "DBG",
+    "networkLogging":           "ERR",
+    "networkCheckLogging":      "ERR",
+    "networkTXLogging":         "ERR",
+    "networkRXLogging":         "ERR",
+    "activeOrdersLogging":      "DBG"
+}

@@ -1,0 +1,19 @@
+{
+    "Logging":                      true,
+    "OrderCompleteEventLogging":    false,
+    "ElevatorCtrlLogging":          false,
+    "CostResultEventLogging":       true,
+    "FloorUptEventLogging":         true,
+    "NewOrderEventLogging":         true,
+    "NewCabOrderEventLogging":      true,
+    "ObstructedEventLogging":       true,
+    "AssignedEvent":                true,
+    "CheckAssignedEvent":           true,
+    "AssignedOKEvent":              true,
+    "AvailabilityEventLogging":     true,
+    "ConnectionEventLogging":       true,
+    "OrderLampCtrEventLogging":     false,
+    "OrderLampsOffCtrEventLogging": false,
+    "ActiveOrdersReqEventLogging":  false,
+    "ActiveOrdersAnsEventLogging":  true
+}
